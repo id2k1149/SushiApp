@@ -62,6 +62,9 @@
                             <constraint firstItem="9MQ-3D-0g9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="oJy-gD-weX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="deliveryLabel" destination="9MQ-3D-0g9" id="XHp-tx-jI3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

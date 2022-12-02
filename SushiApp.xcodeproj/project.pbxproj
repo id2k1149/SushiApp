@@ -14,6 +14,8 @@
 		50A77A0C29397680004B3670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50A77A0B29397680004B3670 /* Assets.xcassets */; };
 		50A77A0F29397680004B3670 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50A77A0D29397680004B3670 /* LaunchScreen.storyboard */; };
 		50A77A1729397B99004B3670 /* SushiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A77A1629397B99004B3670 /* SushiModel.swift */; };
+		50BD0BCA2939804E008A523C /* GalleryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BD0BC92939804E008A523C /* GalleryCollectionView.swift */; };
+		50BD0BCC2939835C008A523C /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BD0BCB2939835C008A523C /* GalleryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		50A77A0E29397680004B3670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50A77A1029397680004B3670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50A77A1629397B99004B3670 /* SushiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiModel.swift; sourceTree = "<group>"; };
+		50BD0BC92939804E008A523C /* GalleryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionView.swift; sourceTree = "<group>"; };
+		50BD0BCB2939835C008A523C /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,50 @@
 		50A77A012939767E004B3670 /* SushiApp */ = {
 			isa = PBXGroup;
 			children = (
-				50A77A1629397B99004B3670 /* SushiModel.swift */,
-				50A77A022939767E004B3670 /* AppDelegate.swift */,
-				50A77A042939767E004B3670 /* SceneDelegate.swift */,
-				50A77A062939767E004B3670 /* ViewController.swift */,
-				50A77A082939767E004B3670 /* Main.storyboard */,
-				50A77A0D29397680004B3670 /* LaunchScreen.storyboard */,
+				50BD0BC529397F29008A523C /* Models */,
+				50BD0BC629397F3D008A523C /* Delegates */,
+				50BD0BC829397F77008A523C /* ViewControllers */,
+				50BD0BC729397F56008A523C /* Storyboards */,
 				50A77A0B29397680004B3670 /* Assets.xcassets */,
 				50A77A1029397680004B3670 /* Info.plist */,
 			);
 			path = SushiApp;
+			sourceTree = "<group>";
+		};
+		50BD0BC529397F29008A523C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50A77A1629397B99004B3670 /* SushiModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		50BD0BC629397F3D008A523C /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				50A77A022939767E004B3670 /* AppDelegate.swift */,
+				50A77A042939767E004B3670 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		50BD0BC729397F56008A523C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				50A77A082939767E004B3670 /* Main.storyboard */,
+				50A77A0D29397680004B3670 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		50BD0BC829397F77008A523C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				50A77A062939767E004B3670 /* ViewController.swift */,
+				50BD0BC92939804E008A523C /* GalleryCollectionView.swift */,
+				50BD0BCB2939835C008A523C /* GalleryCollectionViewCell.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +180,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				50A77A1729397B99004B3670 /* SushiModel.swift in Sources */,
+				50BD0BCC2939835C008A523C /* GalleryCollectionViewCell.swift in Sources */,
 				50A77A072939767E004B3670 /* ViewController.swift in Sources */,
 				50A77A032939767E004B3670 /* AppDelegate.swift in Sources */,
+				50BD0BCA2939804E008A523C /* GalleryCollectionView.swift in Sources */,
 				50A77A052939767E004B3670 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
